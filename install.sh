@@ -23,12 +23,12 @@ pip3 install -r requirements.txt
 # Check if Ollama is installed
 if ! command -v ollama &> /dev/null; then
     echo "Warning: Ollama is not installed. Please install it from https://ollama.ai/"
-    echo "After installing Ollama, run: ollama pull qwen3-coder"
+    echo "After installing Ollama, run: ollama pull freehuntx/qwen3-coder"
 else
     echo "Checking for qwen3-coder model..."
     if ! ollama list | grep -q "qwen3-coder"; then
         echo "Pulling qwen3-coder model..."
-        ollama pull qwen3-coder
+        ollama pull freehuntx/qwen3-coder:14b
     else
         echo "qwen3-coder model is already installed."
     fi
