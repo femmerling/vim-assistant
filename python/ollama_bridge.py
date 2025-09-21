@@ -16,7 +16,7 @@ import hashlib
 import time
 
 class VimAssistant:
-    def __init__(self, ollama_url="http://localhost:11434", model="qwen2.5-coder", chroma_dir="~/.vim-assistant-chroma"):
+    def __init__(self, ollama_url="http://localhost:11434", model="qwen3-coder", chroma_dir="~/.vim-assistant-chroma"):
         self.ollama_url = ollama_url
         self.model = model
         self.chroma_dir = os.path.expanduser(chroma_dir)
@@ -222,7 +222,7 @@ def main():
     parser.add_argument('mode', choices=['completion', 'generation'], help='Mode: completion or generation')
     parser.add_argument('--cwd', default='.', help='Current working directory')
     parser.add_argument('--ollama-url', default='http://localhost:11434', help='Ollama URL')
-    parser.add_argument('--model', default='qwen2.5-coder', help='Ollama model')
+    parser.add_argument('--model', default='qwen3-coder', help='Ollama model')
     parser.add_argument('--chroma-dir', default='~/.vim-assistant-chroma', help='Chroma persistence directory')
     parser.add_argument('--update-index', action='store_true', help='Update the codebase index')
     

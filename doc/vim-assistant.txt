@@ -34,7 +34,7 @@ Requirements:
 - Vim 8.0+ or Neovim 0.5+
 - Python 3.7+
 - Ollama installed locally
-- Qwen2.5-coder model
+- Qwen3-coder model
 
 Using Vundle:
 >
@@ -49,7 +49,7 @@ Manual Installation:
 
 Setup:
 1. Install Ollama: https://ollama.ai/
-2. Pull model: ollama pull qwen2.5-coder
+2. Pull model: ollama pull qwen3-coder
 3. Install dependencies: pip install -r requirements.txt
 4. Start Ollama: ollama serve
 
@@ -62,7 +62,7 @@ g:vim_assistant#ollama_url                    *g:vim_assistant#ollama_url*
     Ollama server URL (default: 'http://localhost:11434')
 
 g:vim_assistant#model                         *g:vim_assistant#model*
-    Ollama model to use (default: 'qwen2.5-coder')
+    Ollama model to use (default: 'qwen3-coder')
 
 g:vim_assistant#buffer_width                  *g:vim_assistant#buffer_width*
     Width of assistant buffer in percentage (default: 20)
@@ -76,7 +76,7 @@ g:vim_assistant#chroma_persist_dir            *g:vim_assistant#chroma_persist_di
 Example configuration:
 >
     let g:vim_assistant#ollama_url = 'http://localhost:11434'
-    let g:vim_assistant#model = 'qwen2.5-coder'
+    let g:vim_assistant#model = 'qwen3-coder'
     let g:vim_assistant#buffer_width = 25
 <
 

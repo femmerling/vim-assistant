@@ -16,7 +16,7 @@ An AI-powered coding assistant for Vim and Neovim that provides intelligent code
 - Vim 8.0+ or Neovim 0.5+
 - Python 3.7+
 - [Ollama](https://ollama.ai/) installed locally
-- Qwen2.5-coder model (or any compatible model)
+- Qwen3-coder model (or any compatible model)
 
 ## Installation
 
@@ -47,9 +47,9 @@ git clone https://github.com/your-username/vim-assistant.git
    # Or download from https://ollama.ai/
    ```
 
-2. **Pull the Qwen2.5-coder model**:
+2. **Pull the Qwen3-coder model**:
    ```bash
-   ollama pull qwen2.5-coder
+   ollama pull qwen3-coder
    ```
 
 3. **Install Python dependencies**:
@@ -70,7 +70,7 @@ Add to your `.vimrc` for customization:
 ```vim
 " Basic configuration
 let g:vim_assistant#ollama_url = 'http://localhost:11434'
-let g:vim_assistant#model = 'qwen2.5-coder'
+let g:vim_assistant#model = 'qwen3-coder'
 let g:vim_assistant#buffer_width = 20
 let g:vim_assistant#max_context_files = 50
 let g:vim_assistant#chroma_persist_dir = '~/.vim-assistant-chroma'
